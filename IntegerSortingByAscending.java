@@ -12,13 +12,13 @@ public class IntegerSortingByAscending{
 		System.out.print("Please enter Size of the array: ");
 		int arraySize = sc.nextInt();
 		int intArray[] = new int[arraySize];
-		int newArray[] = new int[arraySize];
+		//int newArray[] = new int[arraySize];
 		for (int index= 0; index < arraySize; index++){
 			System.out.println("Please enter values :"+index);
 			intArray[index] = sc.nextInt();
 		}
 		int temp = 0;
-		for(int i =0; i < arraySize; i++){
+		for(int i =arraySize.length -1; i > 0; i--){
 			for(int j =0; j< arraySize -1; j++){
 				if(intArray[j] > intArray[j+1]){
 					temp = intArray[j];
