@@ -6,21 +6,25 @@ class Fibonacci{
 	
 	public static void main(String a[]){
 	
-		int i = Fibonacci.fib(3);
+		int i = Fibonacci.fibRecurive(3);
 		System.out.println("Fibonacci "+i);
-// 		int initialValue = 0;
-// 		int secondValue = 1;
-// 		int givenNumber = 6;
-// 		
-// 		System.out.print(initialValue+","+secondValue+","); 
-// 		for(int i = 1; i<givenNumber-1; i++){
-// 			int sumOfTwoNumbers = initialValue + secondValue;
-// 			System.out.print(sumOfTwoNumbers+",");
-// 			initialValue = secondValue;
-// 			secondValue = sumOfTwoNumbers;
-// 		}
  	}
-	public static int fib(int number){ 
+ 	public static int fib(){
+ 		int initialValue = 0;
+		int secondValue = 1;
+		int givenNumber = 6;
+		
+		System.out.print(initialValue+","+secondValue+","); 
+		for(int i = 1; i<givenNumber-1; i++){
+			int sumOfTwoNumbers = initialValue + secondValue;
+			System.out.print(sumOfTwoNumbers+",");
+			initialValue = secondValue;
+			secondValue = sumOfTwoNumbers;
+		}
+ 	
+ 	}
+ 	
+	public static int fibRecurive(int number){ 
 			if(number == 0){
 				return 0;
 			} else if(number == 1){
